@@ -7,6 +7,7 @@ import headers from './Header.module.scss'
 
 function Header(props) {
     const navigate = useNavigate();
+    const { pathname } = useLocation();
 
     const menu = (
         <Menu
@@ -17,7 +18,7 @@ function Header(props) {
                 },
                 {
                     key: '2',
-                    label: <div>第二个</div>,
+                    label: <div onClick={() => {navigate(pathname === '/' ? '/operatings' : '/')}}>{pathname === '/' ? '操作空间' : '首页'}</div>,
                     icon: <SmileOutlined />,
                 },
                 {
