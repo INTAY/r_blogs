@@ -7,7 +7,18 @@ function Home(props) {
     const navigate = useNavigate();
     return (
         <div className={home.homes}>
-            home
+            <div className={home.articles} onClick={() => {
+                navigate('/articles');
+            }}>文章</div>
+            <div className={home.pictures}onClick={() => {
+               navigate('/albums');
+            }}>图片</div>
+            <div className={home.tokingHoles}onClick={() => {
+                navigate('/holes');
+            }}>树洞</div>
+            <div className={home.logins} onClick={() => {
+                navigate('/login');
+            }}>登录</div>
         </div>
     )
 }

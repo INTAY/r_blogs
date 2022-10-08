@@ -1,0 +1,21 @@
+.silders {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    color: #fff;
+    padding: 0 16px 0 24px;
+    font-size: 18px;
+}
+
+.title_collap {
+    cursor: pointer;
+    &:hover {
+        color: #ccc;
+    }
+}
