@@ -15,7 +15,7 @@ function Routers(props) {
             children: [
                 {
                     index: true,
-                    path: '/home',
+                    // path: '/home',
                     element: <Home />,
                     meta: {
                         title: '首页',
