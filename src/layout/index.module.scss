@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 750px) {
     .layouts {
         width: 100vw;
         height: 100vh;
@@ -15,7 +15,7 @@
     }
 }
 
-@media (max-width: 1024px) and (min-width: 376px){
+@media (max-width: 750px) and (min-width: 376px){
     .layouts {
         width: 100vw;
         height: 100vh;

@@ -18,7 +18,7 @@ function Index(props) {
         <div className={layout.layouts}>
             <Layout className={layout.contents}>
                 {
-                    pathname !== '/operatings' ? <>
+                    pathname === '/' ? <>
                         <Header className={layout.headers}>
                             <Headers />
                         </Header>
@@ -33,7 +33,6 @@ function Index(props) {
                         </Layout>
                     </>
                 }
-                {/* 代码 */}
             </Layout>
         </div>
     )
